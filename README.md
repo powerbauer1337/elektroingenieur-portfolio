@@ -1,5 +1,7 @@
 # Elektroingenieur Portfolio - Max Müller
 
+🌐 **Live Demo**: https://powerbauer1337.github.io/elektroingenieur-portfolio
+
 Ein modernes, professionelles Portfolio für Elektroingenieure, das mit Vanilla JavaScript, modernem CSS und Best Practices der Webentwicklung erstellt wurde.
 
 ## 🚀 Features
