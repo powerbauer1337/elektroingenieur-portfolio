@@ -1,0 +1,162 @@
+{
+  "name": "Max Müller - Elektroingenieur Portfolio",
+  "short_name": "Max Müller Portfolio",
+  "description": "Professionelles Portfolio eines erfahrenen Elektroingenieurs mit Fokus auf Power Systems, Automation und PCB Design",
+  "start_url": "/",
+  "display": "standalone",
+  "background_color": "#ffffff",
+  "theme_color": "#1e40af",
+  "orientation": "portrait-primary",
+  "scope": "/",
+  "lang": "de",
+  "dir": "ltr",
+  "categories": [
+    "business",
+    "productivity",
+    "education"
+  ],
+  "icons": [
+    {
+      "src": "assets/icons/icon-72x72.png",
+      "sizes": "72x72",
+      "type": "image/png",
+      "purpose": "any maskable"
+    },
+    {
+      "src": "assets/icons/icon-96x96.png",
+      "sizes": "96x96",
+      "type": "image/png",
+      "purpose": "any maskable"
+    },
+    {
+      "src": "assets/icons/icon-128x128.png",
+      "sizes": "128x128",
+      "type": "image/png",
+      "purpose": "any maskable"
+    },
+    {
+      "src": "assets/icons/icon-144x144.png",
+      "sizes": "144x144",
+      "type": "image/png",
+      "purpose": "any maskable"
+    },
+    {
+      "src": "assets/icons/icon-152x152.png",
+      "sizes": "152x152",
+      "type": "image/png",
+      "purpose": "any maskable"
+    },
+    {
+      "src": "assets/icons/icon-192x192.png",
+      "sizes": "192x192",
+      "type": "image/png",
+      "purpose": "any maskable"
+    },
+    {
+      "src": "assets/icons/icon-384x384.png",
+      "sizes": "384x384",
+      "type": "image/png",
+      "purpose": "any maskable"
+    },
+    {
+      "src": "assets/icons/icon-512x512.png",
+      "sizes": "512x512",
+      "type": "image/png",
+      "purpose": "any maskable"
+    }
+  ],
+  "screenshots": [
+    {
+      "src": "assets/screenshots/desktop-home.png",
+      "sizes": "1280x720",
+      "type": "image/png",
+      "form_factor": "wide",
+      "label": "Desktop Startseite"
+    },
+    {
+      "src": "assets/screenshots/desktop-projects.png",
+      "sizes": "1280x720",
+      "type": "image/png",
+      "form_factor": "wide",
+      "label": "Desktop Projekte"
+    },
+    {
+      "src": "assets/screenshots/mobile-home.png",
+      "sizes": "390x844",
+      "type": "image/png",
+      "form_factor": "narrow",
+      "label": "Mobile Startseite"
+    },
+    {
+      "src": "assets/screenshots/mobile-menu.png",
+      "sizes": "390x844",
+      "type": "image/png",
+      "form_factor": "narrow",
+      "label": "Mobile Navigation"
+    }
+  ],
+  "shortcuts": [
+    {
+      "name": "Projekte",
+      "short_name": "Projekte",
+      "description": "Direkt zu den Portfolio-Projekten",
+      "url": "/#projects",
+      "icons": [
+        {
+          "src": "assets/icons/shortcut-projects.png",
+          "sizes": "96x96"
+        }
+      ]
+    },
+    {
+      "name": "Kompetenzen",
+      "short_name": "Skills",
+      "description": "Technische Kompetenzen und Zertifizierungen",
+      "url": "/#skills",
+      "icons": [
+        {
+          "src": "assets/icons/shortcut-skills.png",
+          "sizes": "96x96"
+        }
+      ]
+    },
+    {
+      "name": "Kontakt",
+      "short_name": "Kontakt",
+      "description": "Kontaktinformationen und Formular",
+      "url": "/#contact",
+      "icons": [
+        {
+          "src": "assets/icons/shortcut-contact.png",
+          "sizes": "96x96"
+        }
+      ]
+    }
+  ],
+  "share_target": {
+    "action": "/#contact",
+    "method": "GET",
+    "params": {
+      "title": "title",
+      "text": "text",
+      "url": "url"
+    }
+  },
+  "protocol_handlers": [
+    {
+      "protocol": "mailto",
+      "url": "/#contact?email=%s"
+    }
+  ],
+  "prefer_related_applications": false,
+  "edge_side_panel": {
+    "preferred_width": 400
+  },
+  "iarc_rating_id": "",
+  "related_applications": [
+    {
+      "platform": "webapp",
+      "url": "https://max-mueller-portfolio.de/manifest.json"
+    }
+  ]
+}

@@ -1,0 +1,214 @@
+{
+  "name": "elektroingenieur-portfolio",
+  "version": "1.0.0",
+  "description": "Professional portfolio website for electrical engineers featuring modern web technologies and best practices",
+  "main": "js/main.js",
+  "type": "module",
+  "scripts": {
+    "dev": "npm-run-all --parallel dev:*",
+    "dev:server": "http-server -p 3000 -c-1 --cors",
+    "dev:watch": "concurrently \"npm run watch:css\" \"npm run watch:js\"",
+    "build": "npm-run-all clean build:*",
+    "build:css": "npm run css:compile && npm run css:minify",
+    "build:js": "npm run js:minify",
+    "build:html": "npm run html:minify",
+    "build:images": "npm run images:optimize",
+    "start": "npm run build && npm run serve",
+    "serve": "http-server dist -p 8080 -c 86400",
+    "test": "npm-run-all test:*",
+    "test:html": "html-validate index.html",
+    "test:css": "stylelint \"css/**/*.css\"",
+    "test:js": "eslint \"js/**/*.js\"",
+    "test:accessibility": "pa11y http://localhost:3000",
+    "test:performance": "lighthouse http://localhost:3000 --output=html --output-path=./reports/lighthouse.html",
+    "lint": "npm-run-all lint:*",
+    "lint:html": "html-validate index.html",
+    "lint:css": "stylelint \"css/**/*.css\" --fix",
+    "lint:js": "eslint \"js/**/*.js\" --fix",
+    "format": "prettier --write \"**/*.{html,css,js,json,md}\"",
+    "clean": "rimraf dist",
+    "css:compile": "postcss css/main.css -o dist/css/main.css",
+    "css:minify": "postcss dist/css/main.css -o dist/css/main.min.css --env production",
+    "js:minify": "terser js/main.js -o dist/js/main.min.js --compress --mangle",
+    "html:minify": "html-minifier --input-dir . --output-dir dist --file-ext html --remove-comments --collapse-whitespace --minify-css --minify-js",
+    "images:optimize": "imagemin assets/images/**/* --out-dir=dist/assets/images",
+    "watch:css": "postcss css/main.css -o css/main.compiled.css --watch",
+    "watch:js": "nodemon --ext js --watch js --exec \"echo 'JS files changed'\"",
+    "deploy": "npm run build && npm run deploy:netlify",
+    "deploy:netlify": "netlify deploy --prod --dir dist",
+    "deploy:github": "gh-pages -d dist",
+    "deploy:vercel": "vercel --prod",
+    "analyze": "npm-run-all analyze:*",
+    "analyze:bundle": "webpack-bundle-analyzer dist/js/main.min.js",
+    "analyze:css": "postcss-reporter --input dist/css/main.min.css",
+    "validate": "npm-run-all validate:*",
+    "validate:html": "html-validate index.html",
+    "validate:css": "css-validator dist/css/main.min.css",
+    "validate:links": "blc http://localhost:3000 -ro",
+    "security": "npm audit && snyk test",
+    "update": "npm-check-updates -u && npm install",
+    "precommit": "lint-staged",
+    "prepare": "husky install"
+  },
+  "keywords": [
+    "portfolio",
+    "electrical-engineering",
+    "power-systems",
+    "automation",
+    "pcb-design",
+    "iot",
+    "embedded-systems",
+    "responsive",
+    "pwa",
+    "modern-css",
+    "vanilla-javascript",
+    "accessibility",
+    "performance"
+  ],
+  "author": {
+    "name": "Max Müller",
+    "email": "max.mueller@elektro-portfolio.de",
+    "url": "https://max-mueller-portfolio.de"
+  },
+  "license": "MIT",
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/maxmueller-ee/elektroingenieur-portfolio.git"
+  },
+  "bugs": {
+    "url": "https://github.com/maxmueller-ee/elektroingenieur-portfolio/issues"
+  },
+  "homepage": "https://max-mueller-portfolio.de",
+  "engines": {
+    "node": ">=16.0.0",
+    "npm": ">=8.0.0"
+  },
+  "browserslist": [
+    "defaults",
+    "not IE 11",
+    "not op_mini all",
+    "maintained node versions"
+  ],
+  "devDependencies": {
+    "@eslint/js": "^9.0.0",
+    "autoprefixer": "^10.4.19",
+    "blc": "^4.0.2",
+    "concurrently": "^8.2.2",
+    "css-validator": "^1.2.3",
+    "cssnano": "^6.1.2",
+    "eslint": "^9.0.0",
+    "gh-pages": "^6.1.1",
+    "html-minifier": "^4.0.0",
+    "html-validate": "^8.18.1",
+    "http-server": "^14.1.1",
+    "husky": "^9.0.11",
+    "imagemin": "^8.0.1",
+    "imagemin-mozjpeg": "^10.0.0",
+    "imagemin-pngquant": "^9.0.2",
+    "imagemin-svgo": "^10.0.1",
+    "imagemin-webp": "^8.0.0",
+    "lighthouse": "^11.7.0",
+    "lint-staged": "^15.2.2",
+    "netlify-cli": "^17.23.1",
+    "nodemon": "^3.1.0",
+    "npm-check-updates": "^16.14.20",
+    "npm-run-all": "^4.1.5",
+    "pa11y": "^8.0.0",
+    "postcss": "^8.4.38",
+    "postcss-cli": "^11.0.0",
+    "postcss-import": "^16.1.0",
+    "postcss-preset-env": "^9.5.2",
+    "postcss-reporter": "^7.1.0",
+    "prettier": "^3.2.5",
+    "rimraf": "^5.0.5",
+    "snyk": "^1.1291.0",
+    "stylelint": "^16.3.1",
+    "stylelint-config-standard": "^36.0.0",
+    "terser": "^5.30.3",
+    "vercel": "^34.0.0",
+    "webpack-bundle-analyzer": "^4.10.1"
+  },
+  "dependencies": {},
+  "lint-staged": {
+    "*.html": [
+      "html-validate",
+      "prettier --write"
+    ],
+    "*.css": [
+      "stylelint --fix",
+      "prettier --write"
+    ],
+    "*.js": [
+      "eslint --fix",
+      "prettier --write"
+    ],
+    "*.{json,md}": [
+      "prettier --write"
+    ]
+  },
+  "husky": {
+    "hooks": {
+      "pre-commit": "lint-staged",
+      "pre-push": "npm run test"
+    }
+  },
+  "postcss": {
+    "plugins": {
+      "postcss-import": {},
+      "postcss-preset-env": {
+        "stage": 1,
+        "features": {
+          "nesting-rules": true,
+          "custom-properties": true,
+          "custom-media-queries": true
+        }
+      },
+      "autoprefixer": {}
+    }
+  },
+  "eslintConfig": {
+    "extends": [
+      "@eslint/js/recommended"
+    ],
+    "env": {
+      "browser": true,
+      "es2022": true
+    },
+    "parserOptions": {
+      "ecmaVersion": 2022,
+      "sourceType": "module"
+    },
+    "rules": {
+      "no-unused-vars": "warn",
+      "no-console": "off",
+      "prefer-const": "error",
+      "no-var": "error"
+    }
+  },
+  "stylelint": {
+    "extends": [
+      "stylelint-config-standard"
+    ],
+    "rules": {
+      "property-no-unknown": [
+        true,
+        {
+          "ignoreProperties": [
+            "scroll-behavior"
+          ]
+        }
+      ],
+      "selector-class-pattern": "^[a-z]([a-z0-9-]+)?(__([a-z0-9]+-?)+)?(--([a-z0-9]+-?)+)?$",
+      "custom-property-pattern": "^[a-z]([a-z0-9-]+)*$"
+    }
+  },
+  "prettier": {
+    "semi": true,
+    "singleQuote": true,
+    "tabWidth": 2,
+    "trailingComma": "es5",
+    "printWidth": 100,
+    "htmlWhitespaceSensitivity": "css",
+    "endOfLine": "lf"
+  }
+}

@@ -1,0 +1,667 @@
+<!DOCTYPE html>
+<html lang="de">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="Max Müller - Elektroingenieur Portfolio. Spezialisiert auf Power Systems, Automation und PCB Design mit 8+ Jahren Erfahrung.">
+    <meta name="keywords" content="Elektroingenieur, Power Systems, Automation, PCB Design, IoT, Embedded Systems">
+    <meta name="author" content="Max Müller">
+    
+    <!-- Open Graph Tags -->
+    <meta property="og:title" content="Max Müller - Elektroingenieur Portfolio">
+    <meta property="og:description" content="Professionelles Portfolio eines erfahrenen Elektroingenieurs mit Fokus auf Power Systems und Automation">
+    <meta property="og:type" content="website">
+    <meta property="og:url" content="https://max-mueller-portfolio.de">
+    <meta property="og:image" content="assets/images/profile/og-image.jpg">
+    
+    <!-- Twitter Card -->
+    <meta name="twitter:card" content="summary_large_image">
+    <meta name="twitter:title" content="Max Müller - Elektroingenieur Portfolio">
+    <meta name="twitter:description" content="Professionelles Portfolio eines erfahrenen Elektroingenieurs">
+    
+    <title>Max Müller - Elektroingenieur Portfolio</title>
+    
+    <!-- Favicon -->
+    <link rel="icon" type="image/x-icon" href="assets/icons/favicon.ico">
+    <link rel="apple-touch-icon" href="assets/icons/apple-touch-icon.png">
+    
+    <!-- PWA Manifest -->
+    <link rel="manifest" href="manifest.json">
+    <meta name="theme-color" content="#1e40af">
+    
+    <!-- Styles -->
+    <link rel="stylesheet" href="css/main.css">
+    
+    <!-- Structured Data -->
+    <script type="application/ld+json">
+    {
+        "@context": "https://schema.org",
+        "@type": "Person",
+        "name": "Max Müller",
+        "jobTitle": "Elektroingenieur",
+        "description": "Erfahrener Elektroingenieur spezialisiert auf Power Systems, Automation und PCB Design",
+        "url": "https://max-mueller-portfolio.de",
+        "sameAs": [
+            "https://linkedin.com/in/max-mueller-ee",
+            "https://github.com/maxmueller-ee"
+        ],
+        "hasCredential": [
+            {
+                "@type": "EducationalOccupationalCredential",
+                "name": "Professional Engineer (PE) License"
+            },
+            {
+                "@type": "EducationalOccupationalCredential", 
+                "name": "Certified Energy Manager (CEM)"
+            }
+        ]
+    }
+    </script>
+</head>
+<body>
+    <!-- Skip to content link for accessibility -->
+    <a href="#main-content" class="skip-link">Zum Hauptinhalt springen</a>
+    
+    <!-- Navigation -->
+    <nav class="nav" role="navigation" aria-label="Hauptnavigation">
+        <div class="nav__container">
+            <a href="#hero" class="nav__logo" aria-label="Zur Startseite">
+                <span class="nav__logo-text">Max Müller</span>
+            </a>
+            
+            <button class="nav__toggle" aria-label="Navigation öffnen" aria-expanded="false">
+                <span class="nav__hamburger"></span>
+            </button>
+            
+            <ul class="nav__menu" role="menubar">
+                <li class="nav__item" role="none">
+                    <a href="#hero" class="nav__link" role="menuitem">Start</a>
+                </li>
+                <li class="nav__item" role="none">
+                    <a href="#projects" class="nav__link" role="menuitem">Projekte</a>
+                </li>
+                <li class="nav__item" role="none">
+                    <a href="#skills" class="nav__link" role="menuitem">Kompetenzen</a>
+                </li>
+                <li class="nav__item" role="none">
+                    <a href="#experience" class="nav__link" role="menuitem">Erfahrung</a>
+                </li>
+                <li class="nav__item" role="none">
+                    <a href="#contact" class="nav__link" role="menuitem">Kontakt</a>
+                </li>
+            </ul>
+        </div>
+    </nav>
+
+    <main id="main-content">
+        <!-- Hero Section -->
+        <section id="hero" class="hero" aria-label="Einführung">
+            <div class="hero__container">
+                <div class="hero__content">
+                    <h1 class="hero__title">
+                        Max Müller
+                        <span class="hero__subtitle">Elektroingenieur, PE</span>
+                    </h1>
+                    <p class="hero__description">
+                        Spezialisiert auf Power Systems, Industrial Automation und PCB Design 
+                        mit über 8 Jahren Erfahrung in der Entwicklung innovativer Elektrotechnik-Lösungen.
+                    </p>
+                    <div class="hero__cta">
+                        <a href="#projects" class="btn btn--primary">Projekte ansehen</a>
+                        <a href="assets/docs/cv-max-mueller.pdf" class="btn btn--secondary" download aria-label="Lebenslauf als PDF herunterladen">
+                            CV herunterladen
+                        </a>
+                    </div>
+                </div>
+                <div class="hero__image">
+                    <img src="assets/images/profile/max-mueller.jpg" alt="Max Müller - Elektroingenieur" class="hero__photo">
+                </div>
+            </div>
+        </section>
+
+        <!-- Projects Section -->
+        <section id="projects" class="projects" aria-label="Portfolio Projekte">
+            <div class="projects__container">
+                <header class="section-header">
+                    <h2 class="section-header__title">Ausgewählte Projekte</h2>
+                    <p class="section-header__subtitle">
+                        Innovative Lösungen in Power Systems, Automation und Embedded Systems
+                    </p>
+                </header>
+
+                <div class="projects__grid">
+                    <!-- Smart Grid Project -->
+                    <article class="project-card">
+                        <div class="project-card__image">
+                            <img src="assets/images/projects/smart-grid.jpg" alt="Smart Grid Optimierung Projekt" loading="lazy">
+                        </div>
+                        <div class="project-card__content">
+                            <h3 class="project-card__title">Smart Grid Optimierung</h3>
+                            <p class="project-card__description">
+                                Entwicklung eines KI-basierten Systems zur Lastverteilung im Stromnetz, 
+                                welches die Effizienz um 25% steigerte und jährlich 2.3 Mio. € einspart.
+                            </p>
+                            <div class="project-card__tech">
+                                <span class="tech-tag">SCADA</span>
+                                <span class="tech-tag">Python</span>
+                                <span class="tech-tag">Machine Learning</span>
+                                <span class="tech-tag">IEC 61850</span>
+                            </div>
+                            <div class="project-card__metrics">
+                                <div class="metric">
+                                    <span class="metric__value">25%</span>
+                                    <span class="metric__label">Effizienzsteigerung</span>
+                                </div>
+                                <div class="metric">
+                                    <span class="metric__value">99.8%</span>
+                                    <span class="metric__label">Systemverfügbarkeit</span>
+                                </div>
+                            </div>
+                        </div>
+                    </article>
+
+                    <!-- Industrial Automation Project -->
+                    <article class="project-card">
+                        <div class="project-card__image">
+                            <img src="assets/images/projects/automation.jpg" alt="Industrielle Automatisierung Projekt" loading="lazy">
+                        </div>
+                        <div class="project-card__content">
+                            <h3 class="project-card__title">Produktionslinien-Automatisierung</h3>
+                            <p class="project-card__description">
+                                Vollständige Automatisierung einer Fertigungslinie mit SPS-Steuerung, 
+                                HMI-Entwicklung und Predictive Maintenance Integration.
+                            </p>
+                            <div class="project-card__tech">
+                                <span class="tech-tag">Siemens S7</span>
+                                <span class="tech-tag">WinCC</span>
+                                <span class="tech-tag">PROFINET</span>
+                                <span class="tech-tag">OPC UA</span>
+                            </div>
+                            <div class="project-card__metrics">
+                                <div class="metric">
+                                    <span class="metric__value">40%</span>
+                                    <span class="metric__label">Produktivitätssteigerung</span>
+                                </div>
+                                <div class="metric">
+                                    <span class="metric__value">15%</span>
+                                    <span class="metric__label">Wartungskosten-reduktion</span>
+                                </div>
+                            </div>
+                        </div>
+                    </article>
+
+                    <!-- PCB Design Project -->
+                    <article class="project-card">
+                        <div class="project-card__image">
+                            <img src="assets/images/projects/pcb-design.jpg" alt="PCB Design für IoT Sensor" loading="lazy">
+                        </div>
+                        <div class="project-card__content">
+                            <h3 class="project-card__title">IoT Sensor Development</h3>
+                            <p class="project-card__description">
+                                Design und Entwicklung einer energieeffizienten PCB für industrielle IoT-Sensoren 
+                                mit LoRaWAN-Konnektivität und 5-jähriger Batterielaufzeit.
+                            </p>
+                            <div class="project-card__tech">
+                                <span class="tech-tag">Altium Designer</span>
+                                <span class="tech-tag">STM32</span>
+                                <span class="tech-tag">LoRaWAN</span>
+                                <span class="tech-tag">C/C++</span>
+                            </div>
+                            <div class="project-card__metrics">
+                                <div class="metric">
+                                    <span class="metric__value">5 Jahre</span>
+                                    <span class="metric__label">Batterielaufzeit</span>
+                                </div>
+                                <div class="metric">
+                                    <span class="metric__value">30%</span>
+                                    <span class="metric__label">Kosteneinsparung</span>
+                                </div>
+                            </div>
+                        </div>
+                    </article>
+
+                    <!-- Renewable Energy Project -->
+                    <article class="project-card">
+                        <div class="project-card__image">
+                            <img src="assets/images/projects/solar-farm.jpg" alt="Solarpark Steuerungssystem" loading="lazy">
+                        </div>
+                        <div class="project-card__content">
+                            <h3 class="project-card__title">Solarpark Management System</h3>
+                            <p class="project-card__description">
+                                Entwicklung eines umfassenden Monitoring- und Steuerungssystems für einen 50MW Solarpark 
+                                mit Echtzeitüberwachung und automatischer Fehlerdiagnose.
+                            </p>
+                            <div class="project-card__tech">
+                                <span class="tech-tag">SCADA</span>
+                                <span class="tech-tag">Modbus</span>
+                                <span class="tech-tag">SQL Server</span>
+                                <span class="tech-tag">C#/.NET</span>
+                            </div>
+                            <div class="project-card__metrics">
+                                <div class="metric">
+                                    <span class="metric__value">50 MW</span>
+                                    <span class="metric__label">Anlagenleistung</span>
+                                </div>
+                                <div class="metric">
+                                    <span class="metric__value">98.5%</span>
+                                    <span class="metric__label">Verfügbarkeit</span>
+                                </div>
+                            </div>
+                        </div>
+                    </article>
+                </div>
+            </div>
+        </section>
+
+        <!-- Skills Section -->
+        <section id="skills" class="skills" aria-label="Technische Kompetenzen">
+            <div class="skills__container">
+                <header class="section-header">
+                    <h2 class="section-header__title">Kompetenzen & Technologien</h2>
+                    <p class="section-header__subtitle">
+                        Tiefe Expertise in modernen Elektrotechnik-Technologien und -Methoden
+                    </p>
+                </header>
+
+                <div class="skills__categories">
+                    <!-- Power Systems -->
+                    <div class="skill-category">
+                        <h3 class="skill-category__title">Power Systems & Energy</h3>
+                        <div class="skill-category__items">
+                            <div class="skill-item">
+                                <span class="skill-item__name">Power System Analysis</span>
+                                <div class="skill-item__bar">
+                                    <div class="skill-item__fill" data-skill="95"></div>
+                                </div>
+                            </div>
+                            <div class="skill-item">
+                                <span class="skill-item__name">Load Flow Studies</span>
+                                <div class="skill-item__bar">
+                                    <div class="skill-item__fill" data-skill="90"></div>
+                                </div>
+                            </div>
+                            <div class="skill-item">
+                                <span class="skill-item__name">Protection Systems</span>
+                                <div class="skill-item__bar">
+                                    <div class="skill-item__fill" data-skill="85"></div>
+                                </div>
+                            </div>
+                            <div class="skill-item">
+                                <span class="skill-item__name">Renewable Energy</span>
+                                <div class="skill-item__bar">
+                                    <div class="skill-item__fill" data-skill="92"></div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+
+                    <!-- Automation & Control -->
+                    <div class="skill-category">
+                        <h3 class="skill-category__title">Automation & Control</h3>
+                        <div class="skill-category__items">
+                            <div class="skill-item">
+                                <span class="skill-item__name">PLC Programming</span>
+                                <div class="skill-item__bar">
+                                    <div class="skill-item__fill" data-skill="88"></div>
+                                </div>
+                            </div>
+                            <div class="skill-item">
+                                <span class="skill-item__name">SCADA Systems</span>
+                                <div class="skill-item__bar">
+                                    <div class="skill-item__fill" data-skill="85"></div>
+                                </div>
+                            </div>
+                            <div class="skill-item">
+                                <span class="skill-item__name">HMI Development</span>
+                                <div class="skill-item__bar">
+                                    <div class="skill-item__fill" data-skill="80"></div>
+                                </div>
+                            </div>
+                            <div class="skill-item">
+                                <span class="skill-item__name">Industrial Networks</span>
+                                <div class="skill-item__bar">
+                                    <div class="skill-item__fill" data-skill="83"></div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+
+                    <!-- Design & Development -->
+                    <div class="skill-category">
+                        <h3 class="skill-category__title">Design & Development</h3>
+                        <div class="skill-category__items">
+                            <div class="skill-item">
+                                <span class="skill-item__name">PCB Design</span>
+                                <div class="skill-item__bar">
+                                    <div class="skill-item__fill" data-skill="90"></div>
+                                </div>
+                            </div>
+                            <div class="skill-item">
+                                <span class="skill-item__name">Embedded Programming</span>
+                                <div class="skill-item__bar">
+                                    <div class="skill-item__fill" data-skill="85"></div>
+                                </div>
+                            </div>
+                            <div class="skill-item">
+                                <span class="skill-item__name">Circuit Simulation</span>
+                                <div class="skill-item__bar">
+                                    <div class="skill-item__fill" data-skill="88"></div>
+                                </div>
+                            </div>
+                            <div class="skill-item">
+                                <span class="skill-item__name">CAD/CAE Tools</span>
+                                <div class="skill-item__bar">
+                                    <div class="skill-item__fill" data-skill="87"></div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+
+                    <!-- Programming -->
+                    <div class="skill-category">
+                        <h3 class="skill-category__title">Programming & Software</h3>
+                        <div class="skill-category__items">
+                            <div class="skill-item">
+                                <span class="skill-item__name">Python</span>
+                                <div class="skill-item__bar">
+                                    <div class="skill-item__fill" data-skill="85"></div>
+                                </div>
+                            </div>
+                            <div class="skill-item">
+                                <span class="skill-item__name">C/C++</span>
+                                <div class="skill-item__bar">
+                                    <div class="skill-item__fill" data-skill="80"></div>
+                                </div>
+                            </div>
+                            <div class="skill-item">
+                                <span class="skill-item__name">MATLAB/Simulink</span>
+                                <div class="skill-item__bar">
+                                    <div class="skill-item__fill" data-skill="90"></div>
+                                </div>
+                            </div>
+                            <div class="skill-item">
+                                <span class="skill-item__name">SQL/Databases</span>
+                                <div class="skill-item__bar">
+                                    <div class="skill-item__fill" data-skill="75"></div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Certifications -->
+                <div class="certifications">
+                    <h3 class="certifications__title">Zertifizierungen</h3>
+                    <div class="certifications__grid">
+                        <div class="cert-item">
+                            <div class="cert-item__icon">🏅</div>
+                            <h4 class="cert-item__title">Professional Engineer (PE)</h4>
+                            <p class="cert-item__issuer">State Engineering Board</p>
+                            <p class="cert-item__year">2019</p>
+                        </div>
+                        <div class="cert-item">
+                            <div class="cert-item__icon">⚡</div>
+                            <h4 class="cert-item__title">Certified Energy Manager</h4>
+                            <p class="cert-item__issuer">AEE - Association of Energy Engineers</p>
+                            <p class="cert-item__year">2020</p>
+                        </div>
+                        <div class="cert-item">
+                            <div class="cert-item__icon">🎯</div>
+                            <h4 class="cert-item__title">Project Management Professional</h4>
+                            <p class="cert-item__issuer">PMI - Project Management Institute</p>
+                            <p class="cert-item__year">2021</p>
+                        </div>
+                        <div class="cert-item">
+                            <div class="cert-item__icon">🔧</div>
+                            <h4 class="cert-item__title">Siemens S7 Expert</h4>
+                            <p class="cert-item__issuer">Siemens AG</p>
+                            <p class="cert-item__year">2022</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- Experience Section -->
+        <section id="experience" class="experience" aria-label="Berufserfahrung">
+            <div class="experience__container">
+                <header class="section-header">
+                    <h2 class="section-header__title">Berufserfahrung</h2>
+                    <p class="section-header__subtitle">
+                        8+ Jahre Expertise in führenden Positionen der Elektrotechnik
+                    </p>
+                </header>
+
+                <div class="timeline">
+                    <article class="timeline__item">
+                        <div class="timeline__marker"></div>
+                        <div class="timeline__content">
+                            <div class="timeline__header">
+                                <h3 class="timeline__title">Senior Electrical Engineer</h3>
+                                <span class="timeline__company">TechPower Solutions GmbH</span>
+                                <span class="timeline__period">2020 - Heute</span>
+                            </div>
+                            <p class="timeline__description">
+                                Leitung von Power Systems Projekten im Wert von über 50 Mio. €. 
+                                Verantwortlich für Smart Grid Implementierungen und Renewable Energy Integration.
+                            </p>
+                            <ul class="timeline__achievements">
+                                <li>Entwicklung eines KI-basierten Lastmanagement-Systems</li>
+                                <li>25% Effizienzsteigerung bei drei Großkunden erreicht</li>
+                                <li>Führung eines 12-köpfigen interdisziplinären Teams</li>
+                                <li>Jährliche Kosteneinsparungen von 5.2 Mio. € realisiert</li>
+                            </ul>
+                            <div class="timeline__tech">
+                                <span class="tech-tag">SCADA</span>
+                                <span class="tech-tag">Python</span>
+                                <span class="tech-tag">IEC 61850</span>
+                                <span class="tech-tag">Power BI</span>
+                            </div>
+                        </div>
+                    </article>
+
+                    <article class="timeline__item">
+                        <div class="timeline__marker"></div>
+                        <div class="timeline__content">
+                            <div class="timeline__header">
+                                <h3 class="timeline__title">Automation Engineer</h3>
+                                <span class="timeline__company">Industrial Systems AG</span>
+                                <span class="timeline__period">2018 - 2020</span>
+                            </div>
+                            <p class="timeline__description">
+                                Spezialisierung auf industrielle Automatisierungslösungen mit Fokus auf 
+                                Produktionsoptimierung und Predictive Maintenance.
+                            </p>
+                            <ul class="timeline__achievements">
+                                <li>15 erfolgreiche Automatisierungsprojekte abgeschlossen</li>
+                                <li>Durchschnittliche Produktivitätssteigerung von 35%</li>
+                                <li>Implementierung von OPC UA Standards</li>
+                                <li>Wartungskosten um 20% reduziert</li>
+                            </ul>
+                            <div class="timeline__tech">
+                                <span class="tech-tag">Siemens S7</span>
+                                <span class="tech-tag">WinCC</span>
+                                <span class="tech-tag">PROFINET</span>
+                                <span class="tech-tag">OPC UA</span>
+                            </div>
+                        </div>
+                    </article>
+
+                    <article class="timeline__item">
+                        <div class="timeline__marker"></div>
+                        <div class="timeline__content">
+                            <div class="timeline__header">
+                                <h3 class="timeline__title">PCB Design Engineer</h3>
+                                <span class="timeline__company">ElectroDesign Solutions</span>
+                                <span class="timeline__period">2016 - 2018</span>
+                            </div>
+                            <p class="timeline__description">
+                                Entwicklung von Embedded Systems und PCB-Layouts für IoT-Geräte und 
+                                industrielle Steuerungsmodule.
+                            </p>
+                            <ul class="timeline__achievements">
+                                <li>40+ erfolgreich entwickelte PCB-Designs</li>
+                                <li>Reduzierung der Produktionskosten um 30%</li>
+                                <li>EMC/EMI Compliance für alle Projekte</li>
+                                <li>Patent für energieeffizientes Sensormodul</li>
+                            </ul>
+                            <div class="timeline__tech">
+                                <span class="tech-tag">Altium Designer</span>
+                                <span class="tech-tag">KiCad</span>
+                                <span class="tech-tag">STM32</span>
+                                <span class="tech-tag">C/C++</span>
+                            </div>
+                        </div>
+                    </article>
+                </div>
+            </div>
+        </section>
+
+        <!-- Contact Section -->
+        <section id="contact" class="contact" aria-label="Kontaktinformationen">
+            <div class="contact__container">
+                <header class="section-header">
+                    <h2 class="section-header__title">Kontakt</h2>
+                    <p class="section-header__subtitle">
+                        Lassen Sie uns über Ihr nächstes Elektrotechnik-Projekt sprechen
+                    </p>
+                </header>
+
+                <div class="contact__content">
+                    <div class="contact__info">
+                        <div class="contact__item">
+                            <div class="contact__icon">📧</div>
+                            <div class="contact__details">
+                                <h3>E-Mail</h3>
+                                <a href="mailto:max.mueller@elektro-portfolio.de" class="contact__link">
+                                    max.mueller@elektro-portfolio.de
+                                </a>
+                            </div>
+                        </div>
+
+                        <div class="contact__item">
+                            <div class="contact__icon">📱</div>
+                            <div class="contact__details">
+                                <h3>Telefon</h3>
+                                <a href="tel:+4917012345678" class="contact__link">
+                                    +49 170 123 456 78
+                                </a>
+                            </div>
+                        </div>
+
+                        <div class="contact__item">
+                            <div class="contact__icon">📍</div>
+                            <div class="contact__details">
+                                <h3>Standort</h3>
+                                <span class="contact__text">München, Deutschland</span>
+                            </div>
+                        </div>
+
+                        <div class="contact__item">
+                            <div class="contact__icon">💼</div>
+                            <div class="contact__details">
+                                <h3>LinkedIn</h3>
+                                <a href="https://linkedin.com/in/max-mueller-ee" class="contact__link" target="_blank" rel="noopener noreferrer">
+                                    linkedin.com/in/max-mueller-ee
+                                </a>
+                            </div>
+                        </div>
+                    </div>
+
+                    <form class="contact__form" aria-label="Kontaktformular">
+                        <div class="form-group">
+                            <label for="name" class="form-label">Name</label>
+                            <input type="text" id="name" name="name" class="form-input" required aria-describedby="name-error">
+                            <span id="name-error" class="form-error" role="alert"></span>
+                        </div>
+
+                        <div class="form-group">
+                            <label for="email" class="form-label">E-Mail</label>
+                            <input type="email" id="email" name="email" class="form-input" required aria-describedby="email-error">
+                            <span id="email-error" class="form-error" role="alert"></span>
+                        </div>
+
+                        <div class="form-group">
+                            <label for="subject" class="form-label">Betreff</label>
+                            <input type="text" id="subject" name="subject" class="form-input" required aria-describedby="subject-error">
+                            <span id="subject-error" class="form-error" role="alert"></span>
+                        </div>
+
+                        <div class="form-group">
+                            <label for="message" class="form-label">Nachricht</label>
+                            <textarea id="message" name="message" rows="5" class="form-textarea" required aria-describedby="message-error"></textarea>
+                            <span id="message-error" class="form-error" role="alert"></span>
+                        </div>
+
+                        <button type="submit" class="btn btn--primary btn--full-width">
+                            Nachricht senden
+                        </button>
+                    </form>
+                </div>
+            </div>
+        </section>
+    </main>
+
+    <!-- Footer -->
+    <footer class="footer">
+        <div class="footer__container">
+            <div class="footer__content">
+                <div class="footer__info">
+                    <h3 class="footer__title">Max Müller</h3>
+                    <p class="footer__subtitle">Elektroingenieur, PE</p>
+                    <p class="footer__description">
+                        Spezialisiert auf Power Systems, Automation und innovative Elektrotechnik-Lösungen
+                    </p>
+                </div>
+
+                <div class="footer__links">
+                    <div class="footer__section">
+                        <h4 class="footer__section-title">Navigation</h4>
+                        <ul class="footer__list">
+                            <li><a href="#hero" class="footer__link">Start</a></li>
+                            <li><a href="#projects" class="footer__link">Projekte</a></li>
+                            <li><a href="#skills" class="footer__link">Kompetenzen</a></li>
+                            <li><a href="#experience" class="footer__link">Erfahrung</a></li>
+                            <li><a href="#contact" class="footer__link">Kontakt</a></li>
+                        </ul>
+                    </div>
+
+                    <div class="footer__section">
+                        <h4 class="footer__section-title">Dokumente</h4>
+                        <ul class="footer__list">
+                            <li><a href="assets/docs/cv-max-mueller.pdf" class="footer__link" download>Lebenslauf</a></li>
+                            <li><a href="assets/docs/portfolio-max-mueller.pdf" class="footer__link" download>Portfolio</a></li>
+                            <li><a href="assets/docs/certifications.pdf" class="footer__link" download>Zertifikate</a></li>
+                        </ul>
+                    </div>
+
+                    <div class="footer__section">
+                        <h4 class="footer__section-title">Rechtliches</h4>
+                        <ul class="footer__list">
+                            <li><a href="impressum.html" class="footer__link">Impressum</a></li>
+                            <li><a href="datenschutz.html" class="footer__link">Datenschutz</a></li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+
+            <div class="footer__bottom">
+                <p class="footer__copyright">
+                    © 2024 Max Müller. Alle Rechte vorbehalten.
+                </p>
+                <div class="footer__social">
+                    <a href="https://linkedin.com/in/max-mueller-ee" class="footer__social-link" target="_blank" rel="noopener noreferrer" aria-label="LinkedIn Profil">
+                        <span class="footer__social-icon">💼</span>
+                    </a>
+                    <a href="https://github.com/maxmueller-ee" class="footer__social-link" target="_blank" rel="noopener noreferrer" aria-label="GitHub Profil">
+                        <span class="footer__social-icon">🔧</span>
+                    </a>
+                </div>
+            </div>
+        </div>
+    </footer>
+
+    <!-- Scripts -->
+    <script src="js/main.js" type="module"></script>
+</body>
+</html>

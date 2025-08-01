@@ -1,0 +1,122 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9"
+        xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+        xmlns:image="http://www.google.com/schemas/sitemap-image/1.1"
+        xsi:schemaLocation="http://www.sitemaps.org/schemas/sitemap/0.9
+        http://www.sitmaps.org/schemas/sitemap/0.9/sitemap.xsd">
+
+  <!-- Main Pages -->
+  <url>
+    <loc>https://max-mueller-portfolio.de/</loc>
+    <lastmod>2024-01-15</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>1.0</priority>
+    <image:image>
+      <image:loc>https://max-mueller-portfolio.de/assets/images/profile/max-mueller.jpg</image:loc>
+      <image:caption>Max Müller - Elektroingenieur Profile</image:caption>
+      <image:title>Max Müller Portrait</image:title>
+    </image:image>
+  </url>
+
+  <!-- Section-specific URLs -->
+  <url>
+    <loc>https://max-mueller-portfolio.de/#hero</loc>
+    <lastmod>2024-01-15</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.9</priority>
+  </url>
+
+  <url>
+    <loc>https://max-mueller-portfolio.de/#projects</loc>
+    <lastmod>2024-01-15</lastmod>
+    <changefreq>weekly</changefreq>
+    <priority>0.9</priority>
+    <image:image>
+      <image:loc>https://max-mueller-portfolio.de/assets/images/projects/smart-grid.jpg</image:loc>
+      <image:caption>Smart Grid Optimization Project</image:caption>
+      <image:title>Smart Grid System</image:title>
+    </image:image>
+    <image:image>
+      <image:loc>https://max-mueller-portfolio.de/assets/images/projects/automation.jpg</image:loc>
+      <image:caption>Industrial Automation Project</image:caption>
+      <image:title>Production Line Automation</image:title>
+    </image:image>
+    <image:image>
+      <image:loc>https://max-mueller-portfolio.de/assets/images/projects/pcb-design.jpg</image:loc>
+      <image:caption>PCB Design for IoT Sensors</image:caption>
+      <image:title>IoT Sensor PCB</image:title>
+    </image:image>
+    <image:image>
+      <image:loc>https://max-mueller-portfolio.de/assets/images/projects/solar-farm.jpg</image:loc>
+      <image:caption>Solar Farm Management System</image:caption>
+      <image:title>Solar Park Control System</image:title>
+    </image:image>
+  </url>
+
+  <url>
+    <loc>https://max-mueller-portfolio.de/#skills</loc>
+    <lastmod>2024-01-15</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.8</priority>
+  </url>
+
+  <url>
+    <loc>https://max-mueller-portfolio.de/#experience</loc>
+    <lastmod>2024-01-15</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.8</priority>
+  </url>
+
+  <url>
+    <loc>https://max-mueller-portfolio.de/#contact</loc>
+    <lastmod>2024-01-15</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.7</priority>
+  </url>
+
+  <!-- Documents -->
+  <url>
+    <loc>https://max-mueller-portfolio.de/assets/docs/cv-max-mueller.pdf</loc>
+    <lastmod>2024-01-10</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.6</priority>
+  </url>
+
+  <url>
+    <loc>https://max-mueller-portfolio.de/assets/docs/portfolio-max-mueller.pdf</loc>
+    <lastmod>2024-01-10</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.6</priority>
+  </url>
+
+  <url>
+    <loc>https://max-mueller-portfolio.de/assets/docs/certifications.pdf</loc>
+    <lastmod>2024-01-10</lastmod>
+    <changefreq>yearly</changefreq>
+    <priority>0.5</priority>
+  </url>
+
+  <!-- Legal Pages -->
+  <url>
+    <loc>https://max-mueller-portfolio.de/impressum.html</loc>
+    <lastmod>2024-01-01</lastmod>
+    <changefreq>yearly</changefreq>
+    <priority>0.3</priority>
+  </url>
+
+  <url>
+    <loc>https://max-mueller-portfolio.de/datenschutz.html</loc>
+    <lastmod>2024-01-01</lastmod>
+    <changefreq>yearly</changefreq>
+    <priority>0.3</priority>
+  </url>
+
+  <!-- Alternative Formats -->
+  <url>
+    <loc>https://max-mueller-portfolio.de/manifest.json</loc>
+    <lastmod>2024-01-15</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.2</priority>
+  </url>
+
+</urlset>
